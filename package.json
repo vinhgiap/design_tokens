@@ -18,7 +18,8 @@
   "homepage": "https://github.com/vinhgiap/design_tokens#readme",
 
   "dependencies": {
-    "tinycolor2": "1.6.0",
-    "style-dictionary": "3.8.0"
+    "tinycolor2": "^1.6.0",
+    "style-dictionary": "^3.8.0",
+    "lodash": "^4.17.21"
   }
 }
