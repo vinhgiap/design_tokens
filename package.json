@@ -1,0 +1,24 @@
+{
+  "name": "designtokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinhgiap/design_tokens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinhgiap/design_tokens/issues"
+  },
+  "homepage": "https://github.com/vinhgiap/design_tokens#readme",
+
+  "dependencies": {
+    "tinycolor2": "1.6.0",
+    "style-dictionary": "3.8.0"
+  }
+}
