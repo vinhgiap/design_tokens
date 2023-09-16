@@ -3,24 +3,35 @@ function convertToShadow(value) {
     var color = convertCustomColor(value.color);
     return `TokenShadow(
       offset: ${offset},
-      color: ${color},
-      blur: ${value.blur}
+      blur: ${value.blur},
+      color: ${color}
     )`;
 }
 
 function convertToBorder(value) {
     var color = convertCustomColor(value.color);
     return `TokenBorder(
-      borderWidth: ${value.width},
-      borderColor: ${color}
+      borderColor: ${color},
+      borderWidth: ${value.width}
     )`;
+}
+
+function convertFontWeight(value) {
+    switch (value) {
+        case 'Bold':
+            return 'UIFont.Weight.bold';
+        case 'Regular':
+            return 'UIFont.Weight.regular';
+        default:
+            return token.value;
+    }
 }
 
 function convertTypography(value) {
     return `TokenTypo(
-        fontFamily: ${value.fontFamily},
-        fontSize: ${value.fontSize},
-        fontWeight: ${value.fontWeight}
+        fontFamily: "${value.fontFamily}",
+        fontWeight: ${convertFontWeight(value.fontWeight)},
+        fontSize: ${value.fontSize}
       )`;
 }
 
