@@ -34,7 +34,7 @@ jobs:
     runs-on: macos-latest
 
     env: 
-      TARGET_REPO_NAME: demotokens
+      TARGET_REPO_NAME: FigmaTokens
       TARGET_REPO_URL: https://${{ secrets.SECRET_GITHUB_TOKEN }}@github.com/vinhgiap/demotokens.git
       TARGET_BRANCH: master
       BASE_BRANCH: master
