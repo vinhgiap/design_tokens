@@ -4,7 +4,7 @@ function convertToShadow(value) {
     return `TokenShadow(
       offset: ${offset},
       color: ${color},
-      blur: ${value.blur},
+      blur: ${value.blur}
     )`;
 }
 
@@ -12,16 +12,15 @@ function convertToBorder(value) {
     var color = convertCustomColor(value.color);
     return `TokenBorder(
       borderWidth: ${value.width},
-      borderColor: ${color},
+      borderColor: ${color}
     )`;
 }
 
 function convertTypography(value) {
-
     return `TokenTypo(
-        fontFamily: '"${value.fontFamily}"',
+        fontFamily: ${value.fontFamily},
         fontSize: ${value.fontSize},
-        fontWeight:  'UIFont.Weight.${value.fontWeight}'
+        fontWeight: ${value.fontWeight}
       )`;
 }
 
