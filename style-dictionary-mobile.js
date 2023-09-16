@@ -26,6 +26,11 @@ StyleDictionary.registerTransformGroup({
       "ios": {
         "transformGroup": "figma-ios",
         "buildPath": "output/",
+        "files": [{
+          "destination": "StyleDictionary.swift",
+          "format": "ios-swift/class.swift",
+          "className": "StyleDictionaryClass",
+      }]
       }
     }
   });
