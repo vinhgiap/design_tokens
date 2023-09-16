@@ -82,10 +82,6 @@ jobs:
           cd ./$TARGET_REPO_NAME
           git push origin $TARGET_BRANCH
 
-      - name: Create Pull request
-        run: |
-          gh pr create -R $TARGET_REPO_URL -B $BASE_BRANCH -H $TARGET_BRANCH --reviewer $REVIEWERS --title "Merge design token update" --body "This is automated PR from Github Action when new design tokens are pushed"
-
       - name: Remove git local repo
         run: |
           pwd
