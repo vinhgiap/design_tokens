@@ -60,8 +60,8 @@ jobs:
 
       - name: Copy Style files
         run: |
-          rm -rf ./$TARGET_REPO_NAME/Components/*
-          mv ./output/* ./$TARGET_REPO_NAME/Components
+          rm -rf ./$TARGET_REPO_NAME/FigmaTokens/Components/*
+          mv ./output/* ./$TARGET_REPO_NAME/FigmaTokens/Components
 
       - name: Config git credentials
         run: |        
