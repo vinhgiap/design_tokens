@@ -4,13 +4,13 @@
 //
 
 // Do not edit directly
-// Generated on Sat, 16 Sep 2023 02:50:00 GMT
+// Generated on Sat, 16 Sep 2023 03:01:52 GMT
 
 
 import SwiftUI
 
 public class StyleDictionaryClass {
-    public static let globalBold = .bold
+    public static let globalBold = UIFont.Weight.bold
     public static let globalBorderWidthLg = 4
     public static let globalBorderWidthMd = 2
     public static let globalBorderWidthSm = 1
@@ -29,13 +29,13 @@ public class StyleDictionaryClass {
     public static let globalFontSizeSm = 14
     public static let globalInter = "Inter"
     public static let globalLabel = TokenTypo(
-        fontFamily: Inter,
+        fontFamily: '"Inter"',
         fontSize: 16,
-        fontWeight:  Bold
+        fontWeight:  'UIFont.Weight.Bold'
       )
     public static let globalLg = CGFloat(30)
     public static let globalMd = CGFloat(24)
-    public static let globalRegular = .regular
+    public static let globalRegular = UIFont.Weight.regular
     public static let globalShadowBlue = TokenShadow(
       offset: CGSize(width: 0, height: 4),
       color: UIColor(argb: 0x0C6DFF80),
@@ -48,12 +48,12 @@ public class StyleDictionaryClass {
     )
     public static let globalSm = CGFloat(10)
     public static let globalStroke = TokenBorder(
-      borderWidth: 1,
+      borderWidth: 2,
       borderColor: UIColor(rgb: 0xD1D1D1),
     )
     public static let globalTextfield = TokenTypo(
-        fontFamily: Inter,
+        fontFamily: '"Inter"',
         fontSize: 18,
-        fontWeight:  Regular
+        fontWeight:  'UIFont.Weight.Regular'
       )
 }
