@@ -1,1 +1,93 @@
 
+name: Generate output files from updated tokens
+
+on:
+  # Triggers the workflow on push events to the input folder
+  push:
+    branches:
+      - main
+    paths:
+      - 'input/**'
+  
+jobs:
+  # Generates output files and commit/push to design-tokens repo
+  generate-tokens:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Transform design-token to code
+        run: npm run build-mobile-style-dictionary
+        
+      - name: Commit generated files
+        id: "auto-commit-action"
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generate new output after design tokens update [automated]
+
+  deliver-bridge-mobile:
+    needs: generate-tokens
+    runs-on: macos-latest
+
+    env: 
+      TARGET_REPO_NAME: bridge_mobile
+      TARGET_REPO_URL: https://${{ secrets.SECRET_GITHUB_TOKEN }}@github.com/InterOpera-Apps/bridge_mobile.git
+      TARGET_BRANCH: design-tokens-mobile
+      BASE_BRANCH: develop
+      REVIEWERS: jeonghoonkimsa,TageGV,Sotatek-NguyenTran2
+      CONFIG_GITHUB_EMAIL: engineering-mobile@interopera.co
+      CONFIG_GITHUB_USERNAME: io-engineering-mobile
+      GITHUB_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v3
+        with: 
+          ref: 'main'
+
+      - name: Clone mobile-bridge repository 
+        run: git clone $TARGET_REPO_URL $TARGET_REPO_NAME
+
+      - name: Checkout branch
+        run: |
+          cd ./$TARGET_REPO_NAME
+          ls
+          git checkout $TARGET_BRANCH
+          git fetch origin $BASE_BRANCH
+
+
+      - name: Copy Style files
+        run: |
+          rm -rf ./$TARGET_REPO_NAME/lib/style/*
+          mv ./output/* ./$TARGET_REPO_NAME/lib/style
+
+      - name: Config git credentials
+        run: |        
+          git config --global user.email "$CONFIG_GITHUB_EMAIL"
+          git config --global user.name "$CONFIG_GITHUB_USERNAME"
+
+      - name: Commit
+        run: |
+          pwd
+          cd ./$TARGET_REPO_NAME
+          git status
+          git add .
+          git commit -m "Deliver style files after design tokens update [automated]"
+
+      - name: Push
+        run: |
+          pwd
+          cd ./$TARGET_REPO_NAME
+          git push origin $TARGET_BRANCH
+
+      - name: Create Pull request
+        run: |
+          gh pr create -R $TARGET_REPO_URL -B $BASE_BRANCH -H $TARGET_BRANCH --reviewer $REVIEWERS --title "Merge design token update" --body "This is automated PR from Github Action when new design tokens are pushed"
+
+      - name: Remove git local repo
+        run: |
+          pwd
+          rm -rf $TARGET_REPO_NAME
