@@ -25,7 +25,7 @@ jobs:
         
       - name: Commit generated files
         id: "auto-commit-action"
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: vinhgiap/git-auto-commit-action@v4
         with:
           commit_message: Generate new output after design tokens update [automated]
 
@@ -34,13 +34,12 @@ jobs:
     runs-on: macos-latest
 
     env: 
-      TARGET_REPO_NAME: bridge_mobile
+      TARGET_REPO_NAME: demotokens
       TARGET_REPO_URL: https://${{ secrets.SECRET_GITHUB_TOKEN }}@github.com/InterOpera-Apps/bridge_mobile.git
-      TARGET_BRANCH: design-tokens-mobile
-      BASE_BRANCH: develop
-      REVIEWERS: jeonghoonkimsa,TageGV,Sotatek-NguyenTran2
-      CONFIG_GITHUB_EMAIL: engineering-mobile@interopera.co
-      CONFIG_GITHUB_USERNAME: io-engineering-mobile
+      TARGET_BRANCH: master
+      BASE_BRANCH: master
+      CONFIG_GITHUB_EMAIL: vinhgv2206@gmail.com
+      CONFIG_GITHUB_USERNAME: vinhgiap
       GITHUB_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
 
     steps:
@@ -61,8 +60,8 @@ jobs:
 
       - name: Copy Style files
         run: |
-          rm -rf ./$TARGET_REPO_NAME/lib/style/*
-          mv ./output/* ./$TARGET_REPO_NAME/lib/style
+          rm -rf ./$TARGET_REPO_NAME/Components/*
+          mv ./output/* ./$TARGET_REPO_NAME/Components
 
       - name: Config git credentials
         run: |        
