@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Sat, 16 Sep 2023 02:18:38 GMT
+// Generated on Sat, 16 Sep 2023 02:25:48 GMT
 
 
 import SwiftUI
@@ -48,7 +48,7 @@ public class StyleDictionaryClass {
     )
     public static let globalSm = CGFloat(10)
     public static let globalStroke = TokenBorder(
-      borderWidth: 2,
+      borderWidth: 1,
       borderColor: UIColor(rgb: 0xD1D1D1),
     )
     public static let globalTextfield = TokenTypo(
