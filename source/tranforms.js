@@ -19,9 +19,9 @@ function convertToBorder(value) {
 function convertTypography(value) {
 
     return `TokenTypo(
-        fontFamily: ${value.fontFamily},
+        fontFamily: '"${value.fontFamily}"',
         fontSize: ${value.fontSize},
-        fontWeight:  ${value.fontWeight}
+        fontWeight:  'UIFont.Weight.${value.fontWeight}'
       )`;
 }
 
@@ -46,9 +46,9 @@ module.exports = {
         transformer: token => {
             switch (token.value) {
                 case 'Bold':
-                    return '.bold';
+                    return 'UIFont.Weight.bold';
                 case 'Regular':
-                    return '.regular';
+                    return 'UIFont.Weight.regular';
                 default:
                     return token.value;
             }
