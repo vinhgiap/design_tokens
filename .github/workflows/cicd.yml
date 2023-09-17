@@ -67,7 +67,7 @@ jobs:
           mv ./output/* ./$TARGET_REPO_NAME/FigmaTokens/Components
 
       - name: Run script add files to xcodeproject
-        run: ruby addfiles.rb
+        run: ruby ./.github/workflows/addfiles.rb
 
       - name: Config git credentials
         run: |        
