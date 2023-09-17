@@ -43,7 +43,7 @@ function convertCustomColor(value) {
     if (typeof value === "string") {
         var str = value.substring(1).toUpperCase();
         if (str.length > 7) {
-            return `UIColor(argb: 0x${str.slice(0, -2)})`;
+            return `UIColor(rgb: 0x${str.slice(0, -2)})`;
         } else {
             return `UIColor(rgb: 0x${str})`;
         }
