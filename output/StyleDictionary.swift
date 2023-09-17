@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Sun, 17 Sep 2023 18:49:29 GMT
+// Generated on Sun, 17 Sep 2023 19:35:42 GMT
 
 
 import SwiftUI
@@ -32,7 +32,7 @@ public class StyleDictionaryClass {
     public static let globalFontSizeSm = 14
     public static let globalInter = "Inter"
     public static let globalLabel = TokenTypo(
-        fontFamily: "Inter",
+        fontFamily: "Inter-Bold",
         fontWeight: UIFont.Weight.bold,
         fontSize: 16
       )
@@ -40,19 +40,21 @@ public class StyleDictionaryClass {
     public static let globalShadowBlue = TokenShadow(
       offset: CGSize(width: 0, height: 4),
       blur: 16,
-      color: UIColor(argb: 0x0C6DFF80)
+      color: UIColor(rgb: 0x0C6DFF80),
+      shadowOpactity: 0.25
     )
     public static let globalShadowGray = TokenShadow(
       offset: CGSize(width: 0, height: 4),
       blur: 16,
-      color: UIColor(argb: 0x00000080)
+      color: UIColor(rgb: 0x00000080),
+      shadowOpactity: 0.25
     )
     public static let globalStroke = TokenBorder(
       borderColor: UIColor(rgb: 0xD1D1D1),
-      borderWidth: 0.6
+      borderWidth: 0.5
     )
     public static let globalTextfield = TokenTypo(
-        fontFamily: "Inter",
+        fontFamily: "Inter-Regular",
         fontWeight: UIFont.Weight.regular,
         fontSize: 18
       )
