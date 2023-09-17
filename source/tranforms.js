@@ -1,10 +1,26 @@
 function convertToShadow(value) {
     var offset = `CGSize(width: ${value.x}, height: ${value.y})`;
-    var color = convertCustomColor(value.color);
+
+    
+    var str = ``
+    if (value.color.lenght > 7) {
+        str = value.color.substring(1).slice(0, -2).toUpperCase();
+    } else {
+        str = value.color.substring(1).toUpperCase();
+    }
+
+    var color = `UIColor(rgb: 0x${str})`;
+    
+    var shadowOpactity = 1;
+    if (value.color.length > 7) {
+        shadowOpactity = 0.25
+    }
+
     return `TokenShadow(
       offset: ${offset},
       blur: ${value.blur},
-      color: ${color}
+      color: ${color},
+      shadowOpactity: ${shadowOpactity}
     )`;
 }
 
@@ -29,7 +45,7 @@ function convertFontWeight(value) {
 
 function convertTypography(value) {
     return `TokenTypo(
-        fontFamily: "${value.fontFamily}",
+        fontFamily: "${value.fontFamily}-${value.fontWeight}",
         fontWeight: ${convertFontWeight(value.fontWeight)},
         fontSize: ${value.fontSize}
       )`;
