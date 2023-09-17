@@ -1,8 +1,6 @@
-#import the xcodeproj ruby gem
-require ‘xcodeproj’
-#define the path to your .xcodeproj file
-project_path = ‘ProjectDir/FigmaTokens.xcodeproj’
-#open the xcode project
+require 'xcodeproj'
+
+project_path = 'FigmaTokens/FigmaTokens.xcodeproj'
 project = Xcodeproj::Project.open(project_path)
 #find the group on which you want to add the file
 group = project.main_group["FigmaTokens"]["Components"]
