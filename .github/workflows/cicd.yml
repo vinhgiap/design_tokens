@@ -49,6 +49,9 @@ jobs:
 
       - name: Clone mobile-bridge repository 
         run: git clone $TARGET_REPO_URL $TARGET_REPO_NAME
+        
+      - name: Instailling xCodeproj
+        run: gem install xcodeproj
 
       - name: Checkout branch
         run: |
