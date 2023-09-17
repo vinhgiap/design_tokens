@@ -66,6 +66,9 @@ jobs:
           rm -rf ./$TARGET_REPO_NAME/FigmaTokens/Components/*
           mv ./output/* ./$TARGET_REPO_NAME/FigmaTokens/Components
 
+      - name: Run script add files to xcodeproject
+        run: ruby addfiles.rb
+
       - name: Config git credentials
         run: |        
           git config --global user.email "$CONFIG_GITHUB_EMAIL"
