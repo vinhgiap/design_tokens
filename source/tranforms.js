@@ -2,7 +2,7 @@ function convertToShadow(value) {
     var offset = `CGSize(width: ${value.x}, height: ${value.y})`;
     
     var shadowOpactity = 0.25;
-
+    var color = convertCustomColor(value.color);
     return `TokenShadow(
       offset: ${offset},
       blur: ${value.blur},
