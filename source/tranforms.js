@@ -1,20 +1,7 @@
 function convertToShadow(value) {
     var offset = `CGSize(width: ${value.x}, height: ${value.y})`;
-
     
-    var str = ``
-    if (value.color.lenght > 7) {
-        str = value.color.substring(1).slice(0, -2).toUpperCase();
-    } else {
-        str = value.color.substring(1).toUpperCase();
-    }
-
-    var color = `UIColor(rgb: 0x${str})`;
-    
-    var shadowOpactity = 1;
-    if (value.color.length > 7) {
-        shadowOpactity = 0.25
-    }
+    var shadowOpactity = 0.25;
 
     return `TokenShadow(
       offset: ${offset},
@@ -56,7 +43,7 @@ function convertCustomColor(value) {
     if (typeof value === "string") {
         var str = value.substring(1).toUpperCase();
         if (str.length > 7) {
-            return `UIColor(argb: 0x${str})`;
+            return `UIColor(argb: 0x${str.slice(0, -2)})`;
         } else {
             return `UIColor(rgb: 0x${str})`;
         }
