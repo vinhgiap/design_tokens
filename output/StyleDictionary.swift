@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Mon, 18 Sep 2023 02:47:09 GMT
+// Generated on Mon, 18 Sep 2023 02:54:48 GMT
 
 
 import SwiftUI
@@ -26,7 +26,7 @@ public class StyleDictionaryClass {
     public static let globalColorStroke = UIColor(rgb: 0xD1D1D1)
     public static let globalCornerRadiusLg = CGFloat(30)
     public static let globalCornerRadiusMd = CGFloat(24)
-    public static let globalCornerRadiusSm = CGFloat(10)
+    public static let globalCornerRadiusSm = CGFloat(20)
     public static let globalFontSizeLg = 18
     public static let globalFontSizeMd = 16
     public static let globalFontSizeSm = 14
