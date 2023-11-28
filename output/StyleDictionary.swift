@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Tue, 28 Nov 2023 06:49:36 GMT
+// Generated on Tue, 28 Nov 2023 06:52:52 GMT
 
 
 import SwiftUI
@@ -17,7 +17,7 @@ public class StyleDictionaryClass {
     public static let globalColorAlertBg = UIColor(rgb: 0xFF4A4A)
     public static let globalColorAlertIcon = UIColor(rgb: 0xFF4A4A)
     public static let globalColorBg = UIColor(rgb: 0xFFFFFF)
-    public static let globalColorLabelPrimary = UIColor(rgb: 0x2E3FFF)
+    public static let globalColorLabelPrimary = UIColor(rgb: 0x2E2E2E)
     public static let globalColorLabelSecondary = UIColor(rgb: 0x2F2F2F)
     public static let globalColorLabelSubtitle = UIColor(rgb: 0x2F2F2F)
     public static let globalColorPrimary = UIColor(rgb: 0xFF0D3B)
