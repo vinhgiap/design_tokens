@@ -14,7 +14,6 @@ end
 if files.include?(true) == false
     puts "Doing add file"    
     group = project.main_group["FigmaTokens"]["Components"]
-    group
     file = group.new_file("StyleDictionary.swift")
     target.add_file_references([file])
     project.save
