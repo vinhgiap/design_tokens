@@ -12,11 +12,10 @@ end.select do |isExits|
 end
 
 if files.include?(true) == false
-#find the group on which you want to add the file
-group = project.main_group["FigmaTokens"]["Components"]
-#get the file reference for the file to add
-file = group.new_file("StyleDictionary.swift")
-#add the file reference to the projects first target
-target.add_file_references([file])
-project.save
+    puts "Doing add file"    
+    group = project.main_group["FigmaTokens"]["Components"]
+    group
+    file = group.new_file("StyleDictionary.swift")
+    target.add_file_references([file])
+    project.save
 end
