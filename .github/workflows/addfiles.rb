@@ -12,9 +12,11 @@ end.select do |isExits|
 end
 
 if files.include?(true) == false
-    puts "Doing add file"    
-    group = project.main_group["FigmaTokens"]["Components"]
-    file = group.new_file("StyleDictionary.swift")
-    target.add_file_references([file])
-    project.save
+    puts "Doing add file"
+    puts files.include?(true)    
+    
+    # group = project.main_group["FigmaTokens"]["Components"]
+    # file = group.new_file("StyleDictionary.swift")
+    # target.add_file_references([file])
+    # project.save
 end
