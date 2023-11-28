@@ -5,7 +5,10 @@ project = Xcodeproj::Project.open(project_path)
 target = project.targets.first
 files = target.source_build_phase.files.to_a.map do |pbx_build_file|
     pbx_build_file.file_ref.real_path.to_s
-puts files
+    
+files.each do |file|
+    puts file
+end    
 
 # #find the group on which you want to add the file
 # group = project.main_group["FigmaTokens"]["Components"]
