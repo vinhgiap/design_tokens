@@ -6,7 +6,11 @@ target = project.targets.first
 files = target.source_build_phase.files.to_a.map do |pbx_build_file|
     pbx_build_file.file_ref.real_path.to_s
 end.select do |path|
-    puts path  
+    path.end_with?(".m", ".mm", ".swift")
+  
+end.select do |path|
+    puts path
+end
 
 # #find the group on which you want to add the file
 # group = project.main_group["FigmaTokens"]["Components"]
@@ -16,4 +20,4 @@ end.select do |path|
 # main_target = project.targets.first
 # main_target.add_file_references([file])
 # #finally, save the project
-project.save
+# project.save
