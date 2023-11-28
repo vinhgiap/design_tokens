@@ -11,7 +11,7 @@ end.select do |isExits|
     puts isExits
 end
 
-if files.include?(true) 
+if files.include?(true) == false
 #find the group on which you want to add the file
 group = project.main_group["FigmaTokens"]["Components"]
 #get the file reference for the file to add
