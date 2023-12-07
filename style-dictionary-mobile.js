@@ -1,6 +1,5 @@
 const StyleDictionary = require('style-dictionary');
 const transforms = require('./source/tranforms');
-const tranformsAndroid = require('./source/tranfroms_android');
 
 for (const key in transforms) {
     const transform = transforms[key];
