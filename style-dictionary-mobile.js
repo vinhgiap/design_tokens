@@ -21,8 +21,11 @@ StyleDictionary.registerTransformGroup({
   StyleDictionary.registerTransformGroup({
     name: 'figma-android',
     transforms: [
-      'attribute/cti',
-       'name/cti/camel',
+      "attribute/cti",
+      "name/cti/camel",
+      "color/hex",
+      "size/remToSp",
+      "size/remToDp"
     ]
   });
 
