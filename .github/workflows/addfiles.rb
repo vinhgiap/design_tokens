@@ -10,10 +10,3 @@ files = target.source_build_phase.files.to_a.map do |pbx_build_file|
 end.select do |isExits|
     puts isExits
 end
-
-if files.include?(true) == false  
-    group = project.main_group["FigmaTokens"]["Components"]
-    file = group.new_file("StyleDictionary.swift")
-    target.add_file_references([file])
-    project.save
-end
