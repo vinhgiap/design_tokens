@@ -2,10 +2,10 @@
 
 <!--
   Do not edit directly
-  Generated on Thu, 07 Dec 2023 03:35:20 GMT
+  Generated on Thu, 07 Dec 2023 03:48:02 GMT
 -->
 <resources>
-  <string name="globalBorderWidthSm">1</string>
+  <string name="globalBorderWidthSm">1.1</string>
   <string name="globalBorderWidthMd">2</string>
   <string name="globalBorderWidthLg">4</string>
   
