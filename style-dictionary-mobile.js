@@ -23,7 +23,6 @@ StyleDictionary.registerTransformGroup({
     transforms: [
       'attribute/cti',
        'name/cti/camel',
-       ...Object.getOwnPropertyNames(tranformsAndroid)
     ]
   });
 
@@ -42,6 +41,7 @@ StyleDictionary.registerTransformGroup({
       }]
       },
       "android": {
+        "transformGroup": "figma-android",
         "buildPath": "output/android",
         "files": [{
           "format": "android/resources",
