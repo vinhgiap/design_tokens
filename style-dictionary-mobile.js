@@ -43,7 +43,6 @@ StyleDictionary.registerTransformGroup({
       }]
       },
       "android": {
-        "transformGroup": "figma-android",
         "buildPath": "output/android",
         "files": [{
           "format": "android/resources",
