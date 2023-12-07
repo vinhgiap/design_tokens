@@ -48,28 +48,28 @@ StyleDictionary.registerTransformGroup({
           "filter": {
             "attributes": { "type": "color" }
           },
-          "className": "gen_color.xml",
+          "destination": "gen_color.xml",
         },
         {
           "format": "android/resources",
           "filter": {
             "attributes": { "type": "borderRadius" }
           },
-          "className": "gen_radius.xml",
+          "destination": "gen_radius.xml",
         },
         {
           "format": "android/resources",
           "filter": {
             "attributes": { "type": "borderWidth" }
           },
-          "className": "gen_border.xml",
+          "destination": "gen_border.xml",
         },
         {
           "format": "android/resources",
           "filter": {
             "attributes": { "type": "fontSizes" }
           },
-          "className": "gen_fontsize.xml",
+          "destination": "gen_fontsize.xml",
         }
         ]
       }
