@@ -47,28 +47,28 @@ StyleDictionary.registerTransformGroup({
         "transformGroup": "figma-android",
         "buildPath": "output/android/",
         "files": [{
-          "format": "android/resources",
+          "format": "android/colors",
           "filter": {
             "attributes": { "type": "color" }
           },
           "destination": "gen_color.xml",
         },
         {
-          "format": "android/resources",
+          "format": "android/dimens",
           "filter": {
             "attributes": { "type": "borderRadius" }
           },
           "destination": "gen_radius.xml",
         },
         {
-          "format": "android/resources",
+          "format": "android/dimens",
           "filter": {
             "attributes": { "type": "borderWidth" }
           },
           "destination": "gen_border.xml",
         },
         {
-          "format": "android/resources",
+          "format": "android/dimens",
           "filter": {
             "attributes": { "type": "fontSizes" }
           },
