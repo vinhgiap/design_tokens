@@ -33,7 +33,7 @@ StyleDictionary.registerTransformGroup({
     "platforms": {
       "ios": {
         "transformGroup": "figma-ios",
-        "buildPath": "output/ios",
+        "buildPath": "output/ios/",
         "files": [{
           "destination": "StyleDictionary.swift",
           "format": "ios-swift/class.swift",
@@ -42,7 +42,7 @@ StyleDictionary.registerTransformGroup({
       },
       "android": {
         "transformGroup": "figma-android",
-        "buildPath": "output/android",
+        "buildPath": "output/android/",
         "files": [{
           "format": "android/resources",
           "filter": {
