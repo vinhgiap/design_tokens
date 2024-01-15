@@ -1,5 +1,5 @@
 const StyleDictionary = require('style-dictionary');
-const transforms = require('./source/tranforms');
+const transforms = require('./source/ios');
 
 for (const key in transforms) {
     const transform = transforms[key];
