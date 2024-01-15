@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Thu, 07 Dec 2023 03:48:02 GMT
+// Generated on Thu, 07 Dec 2023 03:50:51 GMT
 
 
 import SwiftUI
@@ -13,7 +13,7 @@ public class StyleDictionaryClass {
     public static let globalBold = UIFont.Weight.bold
     public static let globalBorderWidthLg = 4
     public static let globalBorderWidthMd = 2
-    public static let globalBorderWidthSm = 1.1
+    public static let globalBorderWidthSm = 1
     public static let globalColorAlertBg = UIColor(rgb: 0xFF4A4A)
     public static let globalColorAlertIcon = UIColor(rgb: 0xFF4A4A)
     public static let globalColorBg = UIColor(rgb: 0xFFFFFF)

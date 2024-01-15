@@ -2,18 +2,8 @@
 
 <!--
   Do not edit directly
-  Generated on Thu, 07 Dec 2023 03:48:02 GMT
+  Generated on Thu, 07 Dec 2023 03:50:51 GMT
 -->
 <resources>
-  <string name="globalColorPrimary">#0dff59</string>
-  <string name="globalColorBg">#ffffff</string>
-  <string name="globalColorStroke">#d1d1d1</string>
-  <string name="globalColorLabelPrimary">#2e2eff</string>
-  <string name="globalColorLabelSecondary">#2f2f2f99</string>
-  <string name="globalColorLabelSubtitle">#2f2f2f61</string>
-  <string name="globalColorShadowBlue">#0c6dff80</string>
-  <string name="globalColorShadowGray">#00000040</string>
-  <string name="globalColorAlertBg">#FF4A4A30</string>
-  <string name="globalColorAlertIcon">#FF4A4A</string>
   
 </resources>
