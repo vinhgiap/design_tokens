@@ -35,46 +35,22 @@ StyleDictionary.registerTransformGroup({
     ],
     "platforms": {
       "ios": {
-        "transformGroup": "figma-ios",
+        "transformGroup": "ios-swift",
         "buildPath": "output/ios/",
         "files": [{
-          "destination": "StyleDictionary.swift",
+          "destination": "StyleDictionary+Class.swift",
           "format": "ios-swift/class.swift",
           "className": "StyleDictionaryClass",
-      }]
+          "filter": {}
+        }]
       },
       "android": {
-        "transformGroup": "figma-android",
+        "transformGroup": "android",
         "buildPath": "output/android/",
         "files": [{
-          "format": "android/colors",
-          "filter": {
-            "attributes": { "type": "color" }
-          },
-          "destination": "gen_color.xml",
-        },
-        {
-          "format": "android/dimens",
-          "filter": {
-            "attributes": { "type": "borderRadius" }
-          },
-          "destination": "gen_radius.xml",
-        },
-        {
-          "format": "android/dimens",
-          "filter": {
-            "attributes": { "type": "borderWidth" }
-          },
-          "destination": "gen_border.xml",
-        },
-        {
-          "format": "android/dimens",
-          "filter": {
-            "attributes": { "type": "fontSizes" }
-          },
-          "destination": "gen_fontsize.xml",
-        }
-        ]
+          "destination": "colors.xml",
+          "format": "android/colors"
+        }]
       }
     }
   });
