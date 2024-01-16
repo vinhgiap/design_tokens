@@ -16,7 +16,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{white.100}",
+            "value": "{gray.100}",
             "type": "color"
           },
           "on-accent": {

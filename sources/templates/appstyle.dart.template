@@ -1,0 +1,132 @@
+<%
+const themeDataClassName = file.prefix + 'ThemeData';
+const isEquatable = file.compareBy === 'equatable';
+
+function propToFinalProperty(prop) {
+    var comment = ''
+    if (prop.comment) {
+       comment = '/// ' + prop.comment + '\n';
+    }
+    return comment + 'final ' + toDartValue(toDartType(prop)) + ' ' + prop.name + ';';
+}
+%>
+//
+// <%= file.destination %>
+//
+<%= fileHeader({file, commentStyle: 'short'}) %>
+import 'package:flutter/material.dart';
+
+class <%= themeDataClassName %> <% if(isEquatable) { %>extends Equatable<% }%> {
+   const <%= themeDataClassName %>({
+      <%= Object.entries(allTokens).map(function([categoryName, categoryTokens]) {
+        return 'required this.' + camelCase(categoryName) + ',';
+      }).join('\n      ') %>
+    });
+
+    factory <%= themeDataClassName %>.regular() => _regular;
+
+    static final <%= themeDataClassName %> _regular = <%= themeDataClassName %>(
+      <%=  Object.entries(allTokens).map(function([categoryName, categoryTokens])  {
+        return camelCase(categoryName) + ': ' + file.prefix +  categoryName + '.regular(),';
+      }).join('\n      ') %>
+    );
+
+    <% Object.entries(allTokens).map(function([categoryName, categoryTokens]) { 
+    %><%= 'final ' + file.prefix +  categoryName  + ' ' + camelCase(categoryName) + ';' %>
+    <% }); %>
+    <% if(isEquatable) { %>
+    @override
+    List<Object> get props => [
+      <% Object.entries(allTokens).map(function([categoryName, categoryTokens]) { 
+      %><%= camelCase(categoryName) + ',' %><% }); %>
+    ];
+    <% } %>
+}
+<% Object.entries(allTokens).forEach(entry => {
+  const [categoryName, categoryTokens] = entry;
+    var categoryThemeDataClassName = file.prefix +  categoryName;
+    var isConst = categoryName !== 'Vector'
+  %>
+
+class <%= categoryThemeDataClassName %> <% if(isEquatable) { %>extends Equatable<% }%> {
+   const <%= categoryThemeDataClassName %>({
+      <%= categoryTokens.map(function(prop) {
+        return 'required this.' + prop.name + ',';
+      }).join('\n      ') %>
+    });
+<% if(isConst) { %>
+    factory <%= categoryThemeDataClassName %>.regular() => const <%= categoryThemeDataClassName %>(
+      <%= categoryTokens.map(function(prop) {
+        return prop.name + ': ' + prop.value + ',';
+      }).join('\n      ') %>
+    );
+<% } else { %>
+  factory <%= categoryThemeDataClassName %>.regular() => <%= categoryThemeDataClassName %>Regular();
+<% } %>
+    <% categoryTokens.map(function(prop) { 
+    %><%= propToFinalProperty(prop) %>
+    <% }); %>
+<% if(isEquatable) { %>
+    @override
+    List<Object> get props => [
+      <% categoryTokens.map(function(prop) { 
+      %><%= prop.name + ',' %><% }); %>
+    ];
+<% }%>
+}
+
+<% if(!isConst) { %>
+class <%= categoryThemeDataClassName %>Regular implements <%= categoryThemeDataClassName %> {
+  <%= categoryThemeDataClassName %>Regular();
+  <% categoryTokens.map(function(prop) { 
+  %>late final <%= toDartValue(toDartType(prop)) %> _<%= prop.name %> = <%= prop.value %>;
+  <%= toDartValue(toDartType(prop)) %> get <%= prop.name %> => _<%= prop.name %>;
+  <% }); %>
+<% if(isEquatable) { %>
+    @override
+    List<Object> get props => [
+      'theme-regular',
+    ];
+<% }%>
+}
+<% }%>
+<% }); %>
+
+class AppComposition {
+  final AppTypography? typography;
+  final Color? fillColor;
+  final Gradient? fillGradient;
+  final TextDecoration? textDecoration;
+  final BorderRadius? borderRadius;
+  final double? height;
+  final double? itemSpacing;
+  final EdgeInsets? padding;
+  final double? sizing;
+
+  const AppComposition({
+    this.typography,
+    this.fillColor,
+    this.fillGradient,
+    this.textDecoration,
+    this.borderRadius,
+    this.height,
+    this.itemSpacing,
+    this.padding,
+    this.sizing
+  });
+ }
+
+class AppTypography {
+  final TextStyle? textStyle;
+  final TextCase? textCase;
+
+  const AppTypography({
+    this.textStyle,
+    this.textCase,
+  });
+}
+
+enum TextCase {
+  none,
+  uppercase,
+}

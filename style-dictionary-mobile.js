@@ -1,58 +1,51 @@
+
 const StyleDictionary = require('style-dictionary');
-const transforms = require('./source/ios');
+const transforms = require('./sources/tranforms');
+const formats = require('./sources/formats');
+
 
 for (const key in transforms) {
-    const transform = transforms[key];
-    StyleDictionary.registerTransform({
-      name: key,
-      ...transform
-    })
-  }
+  const transform = transforms[key];
+  StyleDictionary.registerTransform({
+    name: key,
+    ...transform
+  })
+}
 
 StyleDictionary.registerTransformGroup({
-    name: 'figma-ios',
-    transforms: [
-      'attribute/cti',
-       'name/cti/camel', 
-      ...Object.getOwnPropertyNames(transforms),
-    ]
-  });
+  name: 'figma-flutter',
+  transforms: [
+    'attribute/cti',
+     'name/cti/camel', 
+    ...Object.getOwnPropertyNames(transforms),
+  ]
+});
 
-  StyleDictionary.registerTransformGroup({
-    name: 'figma-android',
-    transforms: [
-      "attribute/cti",
-      "name/cti/camel",
-      "color/hex",
-      "size/remToSp",
-      "size/remToDp"
-    ]
+for (const key in formats) {
+  const formatter = formats[key];
+  StyleDictionary.registerFormat({
+      name: key,
+      formatter: formatter,
   });
+}
 
-  const extendStyle = StyleDictionary.extend({
-    "source": [
-      "input/*.json"
-    ],
-    "platforms": {
-      "ios": {
-        "transformGroup": "ios-swift",
-        "buildPath": "output/ios/",
-        "files": [{
-          "destination": "StyleDictionary+Class.swift",
-          "format": "ios-swift/class.swift",
-          "className": "StyleDictionaryClass",
-          "filter": {}
-        }]
-      },
-      "android": {
-        "transformGroup": "android",
-        "buildPath": "output/android/",
-        "files": [{
-          "destination": "colors.xml",
-          "format": "android/colors"
-        }]
-      }
+const extendStyle = StyleDictionary.extend({
+  "source": [
+    "input/**/*.json"
+  ],
+  "platforms": {
+    "flutter": {
+      "transformGroup": "figma-flutter",
+      "buildPath": "output/",
+      "files": [{
+            "destination": "appstyle.dart",
+            "format": "flutter/style/data.dart",
+            "prefix": "Style"
+        }],
     }
-  });
+  }
+});
 
-  extendStyle.buildAllPlatforms();
+extendStyle.buildAllPlatforms();
+
+
