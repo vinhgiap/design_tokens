@@ -1,0 +1,44 @@
+{
+  "progressBar": {
+    "color": {
+      "bg": {
+        "default": {
+          "value": "{gray.15}",
+          "type": "color"
+        }
+      },
+      "gauge": {
+        "active": {
+          "value": "{theme.semantic.color.brand.default}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{gray.40}",
+          "type": "color"
+        },
+        "brand-special": {
+          "value": "{theme.semantic.color.brand.special}",
+          "type": "color"
+        }
+      }
+    },
+    "heigh": {
+      "sm": {
+        "value": "4",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "{sizing.100}",
+        "type": "sizing"
+      }
+    }
+  },
+  "progressBarSet": {
+    "space-between": {
+      "sm": {
+        "value": "{spacing.100}",
+        "type": "spacing"
+      }
+    }
+  }
+}

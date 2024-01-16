@@ -1,0 +1,8 @@
+{
+  "buttonGroup": {
+    "space-between": {
+      "value": "{semantic.space-between.xl}",
+      "type": "spacing"
+    }
+  }
+}

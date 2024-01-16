@@ -1,0 +1,56 @@
+{
+  "checkbox": {
+    "color": {
+      "bg": {
+        "selected": {
+          "value": "{theme.semantic.color.action-bg.primary.default}",
+          "type": "color"
+        },
+        "unselected": {
+          "value": "{theme.semantic.color.bg-status.highlight}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{theme.semantic.color.action-bg.secondary.default}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "white": {
+          "value": "{theme.semantic.color.fg.on-accent}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{theme.semantic.color.fg-status.basic-dark}",
+          "type": "color"
+        }
+      }
+    },
+    "size": {
+      "icon": {
+        "sm": {
+          "value": "{semantic.size.icon.md}",
+          "type": "sizing"
+        },
+        "md": {
+          "value": "{semantic.size.icon.md}",
+          "type": "sizing"
+        }
+      },
+      "container": {
+        "sm": {
+          "value": "{semantic.size.height.xxs}",
+          "type": "sizing"
+        },
+        "md": {
+          "value": "{semantic.size.height.xs}",
+          "type": "sizing"
+        }
+      }
+    },
+    "radius": {
+      "value": "{semantic.radius.xs}",
+      "type": "borderRadius"
+    }
+  }
+}

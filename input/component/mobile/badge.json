@@ -1,0 +1,147 @@
+{
+  "badge": {
+    "content": {
+      "positive": {
+        "value": "{theme.semantic.color.fg-status.positive}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{theme.semantic.color.fg-status.warning}",
+        "type": "color"
+      },
+      "default": {
+        "value": "{others.darkBlue}",
+        "type": "color"
+      },
+      "alert": {
+        "value": "{theme.semantic.color.action-bg.distruptive.default}",
+        "type": "color"
+      },
+      "brand": {
+        "value": "{theme.semantic.color.brand.default}",
+        "type": "color"
+      }
+    },
+    "space-between": {
+      "xs": {
+        "value": "{semantic.space-between.xs}",
+        "type": "spacing"
+      }
+    },
+    "padding": {
+      "top": {
+        "value": "{semantic.padding.sm}",
+        "type": "spacing"
+      },
+      "bottom": {
+        "value": "{semantic.padding.sm}",
+        "type": "spacing"
+      },
+      "left": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "right": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      }
+    },
+    "background": {
+      "white": {
+        "value": "{theme.semantic.color.bg.default}",
+        "type": "color"
+      },
+      "positive": {
+        "value": "{theme.semantic.color.bg-status.positive}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.6",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "warning": {
+        "value": "{theme.semantic.color.bg-status.warning}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.5",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "alert": {
+        "value": "{theme.semantic.color.bg-status.alert}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.5",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "timer-alert": {
+        "value": "{theme.semantic.color.bg-status.alert}",
+        "type": "color"
+      },
+      "timer-positive": {
+        "value": "{theme.semantic.color.bg-status.positive}",
+        "type": "color"
+      },
+      "brand": {
+        "value": "{theme.semantic.color.bg.highlight-light}",
+        "type": "color"
+      }
+    }
+  },
+  "badge-radius": {
+    "circle": {
+      "value": "{semantic.radius.circle}",
+      "type": "borderRadius"
+    },
+    "square": {
+      "value": "{semantic.radius.md}",
+      "type": "borderRadius"
+    }
+  },
+  "badge-icon": {
+    "sm": {
+      "value": "{semantic.size.height.xxs}",
+      "type": "sizing"
+    }
+  },
+  "badge-shadow": {
+    "value": "{semantic.shadow.level-4}",
+    "type": "boxShadow"
+  },
+  "timerBadge": {
+    "padding": {
+      "left": {
+        "value": "{semantic.padding.xs}",
+        "type": "spacing"
+      },
+      "top": {
+        "value": "{semantic.padding.xs}",
+        "type": "spacing"
+      },
+      "bottom": {
+        "value": "{semantic.padding.xs}",
+        "type": "spacing"
+      },
+      "right": {
+        "value": "{semantic.space-between.lg}",
+        "type": "spacing"
+      }
+    }
+  }
+}

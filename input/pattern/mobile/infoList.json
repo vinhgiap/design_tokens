@@ -1,0 +1,32 @@
+{
+  "infoList": {
+    "space-between": {
+      "lg": {
+        "value": "{semantic.space-between.xxxl}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{semantic.space-between.xl}",
+        "type": "spacing"
+      },
+      "xs": {
+        "value": "{semantic.space-between.xs}",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      },
+      "zero": {
+        "value": "{semantic.space-between.zero}",
+        "type": "spacing"
+      }
+    },
+    "icon": {
+      "md": {
+        "value": "{semantic.size.icon.xs}",
+        "type": "sizing"
+      }
+    }
+  }
+}

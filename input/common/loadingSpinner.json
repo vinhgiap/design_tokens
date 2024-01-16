@@ -1,0 +1,58 @@
+{
+  "loadingSpinner": {
+    "size": {
+      "lg": {
+        "value": "{semantic.size.icon.lg}",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "{semantic.size.icon.md}",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "{semantic.size.icon.sm}",
+        "type": "sizing"
+      }
+    },
+    "color": {
+      "on-dark-bg": {
+        "background": {
+          "value": "{theme.semantic.color.fg.on-accent}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.3",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "spinner": {
+          "value": "{theme.semantic.color.fg.on-accent}",
+          "type": "color"
+        }
+      },
+      "on-light-bg": {
+        "background": {
+          "value": "{theme.semantic.color.brand.default}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.3",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "spinner": {
+          "value": "{theme.semantic.color.brand.default}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

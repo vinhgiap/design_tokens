@@ -1,0 +1,46 @@
+{
+  "satusIcon": {
+    "size": {
+      "sm": {
+        "value": "{semantic.size.icon.xs}",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "{semantic.size.icon.sm}",
+        "type": "sizing"
+      },
+      "lg": {
+        "value": "{semantic.size.icon.md}",
+        "type": "sizing"
+      }
+    }
+  },
+  "statusIcon": {
+    "color": {
+      "warning": {
+        "value": "{theme.semantic.color.fg-status.warning}",
+        "type": "color"
+      },
+      "positive": {
+        "value": "{theme.semantic.color.fg-status.positive}",
+        "type": "color"
+      },
+      "alert": {
+        "value": "{theme.semantic.color.fg-status.alert}",
+        "type": "color"
+      },
+      "info": {
+        "value": "{theme.semantic.color.fg.accent-original}",
+        "type": "color"
+      },
+      "info-basic": {
+        "value": "{theme.semantic.color.fg.secondary}",
+        "type": "color"
+      },
+      "info-brand-weak": {
+        "value": "{theme.semantic.color.fg.accent-weak}",
+        "type": "color"
+      }
+    }
+  }
+}

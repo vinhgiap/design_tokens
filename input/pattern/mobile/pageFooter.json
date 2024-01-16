@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "shadow": {
+      "value": "{semantic.shadow.level-2}",
+      "type": "boxShadow"
+    },
+    "background": {
+      "value": "{theme.semantic.color.canvas.surface}",
+      "type": "color"
+    },
+    "space-between": {
+      "zero": {
+        "value": "{semantic.space-between.zero}",
+        "type": "spacing"
+      }
+    },
+    "padding": {
+      "value": "{semantic.padding.md}",
+      "type": "spacing"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "iconSymbol": {
+    "icon-size": {
+      "md": {
+        "value": "{semantic.size.icon.sm}",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "{semantic.size.icon.xs}",
+        "type": "sizing"
+      },
+      "lg": {
+        "value": "{semantic.size.icon.md}",
+        "type": "sizing"
+      }
+    },
+    "background": {
+      "brand": {
+        "value": "{theme.semantic.color.brand.default}",
+        "type": "color"
+      },
+      "highlight": {
+        "value": "{theme.semantic.color.bg.highlight}",
+        "type": "color"
+      },
+      "alert": {
+        "value": "{theme.semantic.color.bg-status.alert}",
+        "type": "color"
+      },
+      "success": {
+        "value": "{theme.semantic.color.bg.positive}",
+        "type": "color"
+      },
+      "grey": {
+        "value": "{theme.semantic.color.bg-status.basic-dark}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{theme.semantic.color.bg-status.warning}",
+        "type": "color"
+      },
+      "dark-grey": {
+        "value": "{theme.semantic.color.border.default}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.2",
+              "space": "hsl"
+            }
+          }
+        }
+      }
+    },
+    "icon-color": {
+      "white": {
+        "value": "{theme.semantic.color.fg.on-accent}",
+        "type": "color"
+      },
+      "special": {
+        "value": "{theme.semantic.color.brand.special-45degree}",
+        "type": "gradient"
+      },
+      "alert": {
+        "value": "{theme.semantic.color.fg-status.alert}",
+        "type": "color"
+      },
+      "success": {
+        "value": "{theme.semantic.color.fg-status.positive}",
+        "type": "color"
+      },
+      "grey": {
+        "value": "{theme.semantic.color.fg.secondary}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{theme.semantic.color.fg-status.basic-dark}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{theme.semantic.color.fg-status.warning}",
+        "type": "color"
+      }
+    }
+  },
+  "iconSymbol-container": {
+    "md": {
+      "value": {
+        "sizing": "{semantic.size.height.xs}",
+        "borderRadius": "{semantic.radius.circle}"
+      },
+      "type": "composition"
+    },
+    "lg": {
+      "value": {
+        "sizing": "{semantic.size.height.md}",
+        "borderRadius": "{semantic.radius.circle}"
+      },
+      "type": "composition"
+    },
+    "sm": {
+      "value": {
+        "borderRadius": "{semantic.radius.circle}",
+        "sizing": "{semantic.size.icon.md}"
+      },
+      "type": "composition"
+    }
+  }
+}

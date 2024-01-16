@@ -1,0 +1,104 @@
+{
+  "keywordBadge": {
+    "content": {
+      "primary": {
+        "value": "{theme.semantic.color.fg.primary}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{theme.semantic.color.fg.disabled}",
+        "type": "color"
+      },
+      "white": {
+        "value": "{theme.semantic.color.fg.on-accent}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{theme.semantic.color.fg.secondary}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "default": {
+        "value": "{semantic.size.icon.sm}",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "{semantic.size.icon.xs}",
+        "type": "sizing"
+      }
+    },
+    "space-between": {
+      "value": "{semantic.space-between.xs}",
+      "type": "spacing"
+    },
+    "background": {
+      "default": {
+        "value": "{theme.semantic.color.bg.highlight}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{theme.semantic.color.bg.disabled}",
+        "type": "color"
+      },
+      "unselected": {
+        "value": "{theme.semantic.color.canvas.canvas}",
+        "type": "color"
+      },
+      "selected": {
+        "value": "{theme.semantic.color.brand.default}",
+        "type": "color"
+      }
+    },
+    "default": {
+      "padding": {
+        "bottom": {
+          "value": "{semantic.padding.sm}",
+          "type": "spacing"
+        },
+        "top": {
+          "value": "{semantic.padding.sm}",
+          "type": "spacing"
+        },
+        "left": {
+          "value": "{semantic.padding.md}",
+          "type": "spacing"
+        },
+        "right": {
+          "value": "{semantic.padding.md}",
+          "type": "spacing"
+        }
+      }
+    },
+    "sm": {
+      "padding": {
+        "top": {
+          "value": "{semantic.padding.xs}",
+          "type": "spacing"
+        },
+        "bottom": {
+          "value": "{semantic.padding.xs}",
+          "type": "spacing"
+        },
+        "left": {
+          "value": "{semantic.padding.sm}",
+          "type": "spacing"
+        },
+        "right": {
+          "value": "{semantic.padding.sm}",
+          "type": "spacing"
+        }
+      }
+    }
+  },
+  "keywordBadge-set": {
+    "space-between": {
+      "value": "{semantic.space-between.md}",
+      "type": "spacing"
+    }
+  },
+  "keywordBadge-radius": {
+    "value": "{semantic.radius.circle}",
+    "type": "borderRadius"
+  }
+}

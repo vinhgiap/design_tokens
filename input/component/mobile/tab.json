@@ -1,0 +1,42 @@
+{
+  "tab": {
+    "selected-underline": {
+      "value": {
+        "height": "{semantic.size.height.ultra-xxxxs}",
+        "fill": "{gradient.90deg}",
+        "borderRadius": "{radius.circle}"
+      },
+      "type": "composition"
+    },
+    "space-between": {
+      "vertical": {
+        "value": "{semantic.space-between.lg}",
+        "type": "spacing"
+      }
+    }
+  },
+  "tab-height": {
+    "value": "{semantic.size.height.md}",
+    "type": "sizing"
+  },
+  "tab-set": {
+    "space-between": {
+      "value": "{semantic.space-between.zero}",
+      "type": "spacing"
+    },
+    "padding": {
+      "left": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "top": {
+        "value": "{semantic.padding.sm}",
+        "type": "spacing"
+      }
+    }
+  },
+  "underline-height": {
+    "value": "{semantic.size.height.ultra-xxxxs}",
+    "type": "sizing"
+  }
+}

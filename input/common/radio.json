@@ -1,0 +1,48 @@
+{
+  "radio": {
+    "color": {
+      "outerCircle": {
+        "selected": {
+          "value": "{theme.semantic.color.action-bg.primary.default}",
+          "type": "color"
+        },
+        "unselected": {
+          "value": "{theme.semantic.color.bg-status.highlight}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{theme.semantic.color.action-bg.secondary.default}",
+          "type": "color"
+        }
+      },
+      "innerCircle": {
+        "white": {
+          "value": "{theme.semantic.color.fg.on-accent}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{theme.semantic.color.fg-status.basic-dark}",
+          "type": "color"
+        }
+      }
+    },
+    "size": {
+      "circle": {
+        "Inner": {
+          "value": "{semantic.size.height.ultra-xs}",
+          "type": "sizing"
+        },
+        "outer": {
+          "value": "{semantic.size.height.xxs}",
+          "type": "sizing"
+        }
+      }
+    },
+    "radius": {
+      "default": {
+        "value": "{semantic.radius.circle}",
+        "type": "borderRadius"
+      }
+    }
+  }
+}

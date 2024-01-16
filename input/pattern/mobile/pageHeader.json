@@ -1,0 +1,50 @@
+{
+  "Mobile-pageHeader": {
+    "space-between": {
+      "horizontal": {
+        "md": {
+          "value": "{semantic.space-between.xl}",
+          "type": "spacing"
+        }
+      },
+      "vertical": {
+        "zero": {
+          "value": "{semantic.space-between.zero}",
+          "type": "spacing"
+        }
+      }
+    },
+    "actionHeader": {
+      "padding": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      }
+    },
+    "titleHeader": {
+      "padding": {
+        "top": {
+          "value": "{semantic.padding.xs}",
+          "type": "spacing"
+        },
+        "bottom": {
+          "value": "{semantic.padding.md}",
+          "type": "spacing"
+        },
+        "right": {
+          "value": "{semantic.padding.md}",
+          "type": "spacing"
+        },
+        "left": {
+          "value": "{semantic.padding.md}",
+          "type": "spacing"
+        }
+      }
+    }
+  },
+  "pageHeader": {
+    "ondrak-icons": {
+      "value": "{theme.semantic.color.fg.on-accent}",
+      "type": "color"
+    }
+  }
+}

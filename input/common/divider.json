@@ -1,0 +1,30 @@
+{
+  "divider": {
+    "color": {
+      "default": {
+        "value": "{theme.semantic.color.border.default}",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{theme.semantic.color.border.dark}",
+        "type": "color"
+      }
+    },
+    "height": {
+      "lg": {
+        "value": "{sizing.100}",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "1",
+        "type": "sizing"
+      }
+    },
+    "width": {
+      "sm": {
+        "value": "1",
+        "type": "sizing"
+      }
+    }
+  }
+}

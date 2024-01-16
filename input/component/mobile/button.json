@@ -1,0 +1,208 @@
+{
+  "button": {
+    "primary": {
+      "bg-default": {
+        "value": "{theme.semantic.color.action-bg.primary.default}",
+        "type": "color"
+      },
+      "bg-disabled": {
+        "value": "{iris.60}",
+        "type": "color"
+      },
+      "content-default": {
+        "value": "{theme.semantic.color.fg.on-accent}",
+        "type": "color"
+      }
+    },
+    "basic": {
+      "bg-default": {
+        "value": "{theme.semantic.color.bg.highlight-light}",
+        "type": "color"
+      },
+      "bg-disabled": {
+        "value": "{iris.10}",
+        "type": "color"
+      },
+      "content-default": {
+        "value": "{theme.semantic.color.fg-status.highlight}",
+        "type": "color"
+      },
+      "content-disabled": {
+        "value": "{theme.semantic.color.fg.disabled}",
+        "type": "color"
+      }
+    },
+    "plain": {
+      "content-default": {
+        "value": "{theme.semantic.color.fg.accent-original}",
+        "type": "color"
+      },
+      "content-disabled": {
+        "value": "{theme.semantic.color.fg.disabled}",
+        "type": "color"
+      },
+      "icon": {
+        "value": "{theme.semantic.color.fg.secondary}",
+        "type": "color"
+      }
+    },
+    "distruptive": {
+      "bg-default": {
+        "value": "{theme.semantic.color.bg-status.alert}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.5",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "content-disabled": {
+        "value": "{button.distruptive.bg-default}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.1",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "content-default": {
+        "value": "{theme.semantic.color.fg-status.alert}",
+        "type": "color"
+      }
+    },
+    "overlayClose": {
+      "bg-default": {
+        "value": "{gray.opacity.60}",
+        "type": "color"
+      },
+      "content-default": {
+        "value": "{theme.semantic.color.fg.on-accent}",
+        "type": "color"
+      }
+    },
+    "primary-special-mobile": {
+      "bg-default": {
+        "value": "{theme.semantic.color.brand.special}",
+        "type": "gradient"
+      },
+      "bg-default-45degree": {
+        "value": "{theme.semantic.color.brand.special-45degree}",
+        "type": "gradient"
+      },
+      "bg-disabled": {
+        "value": "{iris.60}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "sm": {
+        "value": "{semantic.size.icon.sm}",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "{semantic.size.icon.md}",
+        "type": "sizing"
+      },
+      "lg": {
+        "value": "{semantic.size.icon.lg}",
+        "type": "sizing"
+      }
+    }
+  },
+  "button-text": {
+    "lg": {
+      "value": "{semantic.typography.h4}",
+      "type": "typography"
+    },
+    "subtext": {
+      "value": "{semantic.typography.body-xs}",
+      "type": "typography"
+    },
+    "sm": {
+      "value": "{semantic.typography.label.lg}",
+      "type": "typography"
+    }
+  },
+  "button-lg": {
+    "padding": {
+      "right": {
+        "value": "{semantic.padding.xl}",
+        "type": "spacing"
+      },
+      "left": {
+        "value": "{semantic.padding.xl}",
+        "type": "spacing"
+      }
+    }
+  },
+  "button-height": {
+    "lg": {
+      "value": "{semantic.size.height.lg}",
+      "type": "sizing"
+    },
+    "md": {
+      "value": "{semantic.size.height.md}",
+      "type": "sizing"
+    },
+    "sm": {
+      "value": "{semantic.size.height.sm}",
+      "type": "sizing"
+    }
+  },
+  "button-radius": {
+    "circle": {
+      "value": "{semantic.radius.circle}",
+      "type": "borderRadius"
+    },
+    "md": {
+      "value": "{semantic.radius.md}",
+      "type": "borderRadius"
+    }
+  },
+  "button-item-spacing": {
+    "sm": {
+      "value": "{semantic.padding.xxs}",
+      "type": "spacing"
+    },
+    "md": {
+      "value": "{semantic.space-between.xs}",
+      "type": "spacing"
+    },
+    "lg": {
+      "value": "{semantic.space-between.md}",
+      "type": "spacing"
+    }
+  },
+  "button-md": {
+    "padding": {
+      "left": {
+        "value": "{semantic.padding.lg}",
+        "type": "spacing"
+      },
+      "right": {
+        "value": "{semantic.padding.lg}",
+        "type": "spacing"
+      }
+    }
+  },
+  "button-sm": {
+    "padding": {
+      "left": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "right": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      }
+    }
+  }
+}

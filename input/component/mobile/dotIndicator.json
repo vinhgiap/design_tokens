@@ -1,0 +1,52 @@
+{
+  "dotIndicator": {
+    "size": {
+      "default": {
+        "value": "{semantic.size.icon.xxxs}",
+        "type": "sizing"
+      },
+      "focus": {
+        "width": {
+          "value": "{semantic.size.icon.md}",
+          "type": "sizing"
+        },
+        "height": {
+          "value": "{semantic.size.icon.xxxs}",
+          "type": "sizing"
+        }
+      },
+      "icon": {
+        "value": "{semantic.size.icon.xxs}",
+        "type": "sizing"
+      }
+    },
+    "default": {
+      "value": "{theme.semantic.color.bg.disabled}",
+      "type": "color"
+    },
+    "focus": {
+      "value": "{theme.semantic.color.brand.default}",
+      "type": "color"
+    },
+    "set": {
+      "space-between": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      }
+    },
+    "icon": {
+      "value": "{theme.semantic.color.fg.secondary}",
+      "type": "color"
+    }
+  },
+  "dot-radius": {
+    "value": "{radius.circle}",
+    "type": "borderRadius"
+  },
+  "dotIndicator-set": {
+    "padding": {
+      "value": "{semantic.padding.sm}",
+      "type": "spacing"
+    }
+  }
+}

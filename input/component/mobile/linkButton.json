@@ -1,0 +1,86 @@
+{
+  "link-text": {
+    "lg": {
+      "value": {
+        "typography": "{semantic.typography.body-lg}",
+        "fill": "{theme.semantic.color.brand.default}"
+      },
+      "type": "composition"
+    },
+    "md": {
+      "value": {
+        "typography": "{semantic.typography.body-md}",
+        "fill": "{theme.semantic.color.brand.default}"
+      },
+      "type": "composition"
+    },
+    "sm": {
+      "value": {
+        "typography": "{semantic.typography.body-sm}",
+        "fill": "{theme.semantic.color.brand.default}"
+      },
+      "type": "composition"
+    },
+    "sm-copy": {
+      "value": {
+        "typography": "{semantic.typography.body-xs}",
+        "fill": "{theme.semantic.color.brand.default}"
+      },
+      "type": "composition"
+    }
+  },
+  "link": {
+    "space-between": {
+      "value": "{semantic.space-between.xs}",
+      "type": "spacing"
+    },
+    "icon-color": {
+      "value": "{theme.semantic.color.brand.default}",
+      "type": "color"
+    },
+    "icon": {
+      "sm": {
+        "value": "{semantic.size.icon.xs}",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "{button.icon.sm}",
+        "type": "sizing"
+      }
+    },
+    "icon-color-on-dark": {
+      "value": "{theme.semantic.color.bg.highlight}",
+      "type": "color"
+    }
+  },
+  "link-text-on-dark": {
+    "lg": {
+      "value": {
+        "typography": "{semantic.typography.body-lg}",
+        "fill": "{theme.semantic.color.bg.highlight}"
+      },
+      "type": "composition"
+    },
+    "md": {
+      "value": {
+        "typography": "{semantic.typography.body-md}",
+        "fill": "{theme.semantic.color.bg.highlight}"
+      },
+      "type": "composition"
+    },
+    "sm": {
+      "value": {
+        "typography": "{semantic.typography.body-sm}",
+        "fill": "{theme.semantic.color.bg.highlight}"
+      },
+      "type": "composition"
+    },
+    "xs": {
+      "value": {
+        "typography": "{semantic.typography.body-xs}",
+        "fill": "{theme.semantic.color.bg.highlight}"
+      },
+      "type": "composition"
+    }
+  }
+}

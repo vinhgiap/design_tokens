@@ -1,0 +1,190 @@
+{
+  "inputField": {
+    "icon": {
+      "md": {
+        "value": "{semantic.size.icon.md}",
+        "type": "sizing"
+      },
+      "mandatory": {
+        "value": "{semantic.size.icon.xxs}",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "{semantic.size.height.xxs}",
+        "type": "sizing"
+      }
+    }
+  },
+  "input": {
+    "space-between": {
+      "sm": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      },
+      "xxs": {
+        "value": "{semantic.space-between.xxs}",
+        "type": "spacing"
+      },
+      "xs": {
+        "value": "{semantic.space-between.xs}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{semantic.space-between.xl}",
+        "type": "spacing"
+      }
+    },
+    "padding": {
+      "sm": {
+        "value": "{semantic.padding.ultra-sm}",
+        "type": "spacing"
+      },
+      "left": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "right": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "top": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "bottom": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      }
+    }
+  },
+  "inputField-bg": {
+    "default": {
+      "value": "{theme.semantic.color.canvas.canvas}",
+      "type": "color"
+    },
+    "disabled": {
+      "value": "{theme.semantic.color.bg.disabled}",
+      "type": "color"
+    },
+    "alert": {
+      "value": "{theme.semantic.color.bg-status.alert}",
+      "type": "color",
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "lighten",
+            "value": "0.5",
+            "space": "hsl"
+          }
+        }
+      }
+    },
+    "positive": {
+      "value": "{theme.semantic.color.bg-status.positive}",
+      "type": "color",
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "lighten",
+            "value": "0.5",
+            "space": "hsl"
+          }
+        }
+      }
+    },
+    "warning": {
+      "value": "{theme.semantic.color.bg-status.warning}",
+      "type": "color",
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "lighten",
+            "value": "0.5",
+            "space": "hsl"
+          }
+        }
+      }
+    }
+  },
+  "inputField-icon": {
+    "grey": {
+      "value": "{theme.semantic.color.fg.secondary}",
+      "type": "color"
+    },
+    "disabled": {
+      "value": "{button.basic.content-disabled}",
+      "type": "color"
+    },
+    "mandatory": {
+      "value": "{theme.semantic.color.fg-status.alert}",
+      "type": "color"
+    },
+    "mandatory-disabled": {
+      "value": "{theme.semantic.color.fg-status.alert}",
+      "type": "color",
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "lighten",
+            "value": "0.5",
+            "space": "hsl"
+          }
+        }
+      }
+    }
+  },
+  "input-group": {
+    "space-between": {
+      "sm": {
+        "value": "{semantic.space-between.xl}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{semantic.space-between.xxxl}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{semantic.space-between.xxxxl}",
+        "type": "spacing"
+      }
+    }
+  },
+  "input-radius": {
+    "value": "{semantic.radius.md}",
+    "type": "borderRadius"
+  },
+  "inputField-height": {
+    "default": {
+      "value": "{semantic.size.height.lg}",
+      "type": "sizing"
+    },
+    "sm": {
+      "value": "{semantic.size.height.md}",
+      "type": "sizing"
+    }
+  },
+  "input-password": {
+    "brand": {
+      "value": "{theme.semantic.color.brand.default}",
+      "type": "color"
+    },
+    "grey": {
+      "value": "{theme.semantic.color.fg.primary}",
+      "type": "color"
+    },
+    "empty": {
+      "value": "{theme.semantic.color.canvas.canvas}",
+      "type": "color"
+    }
+  },
+  "inputPassword": {
+    "grey": {
+      "value": "{semantic.size.icon.xxxs}",
+      "type": "sizing"
+    },
+    "brand": {
+      "value": "{semantic.size.icon.xs}",
+      "type": "sizing"
+    }
+  }
+}

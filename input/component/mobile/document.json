@@ -1,0 +1,18 @@
+{
+  "document": {
+    "space-between": {
+      "md": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{semantic.space-between.xxxl}",
+        "type": "spacing"
+      }
+    }
+  },
+  "document-height": {
+    "value": "{semantic.size.height.lg}",
+    "type": "sizing"
+  }
+}

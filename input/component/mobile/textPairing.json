@@ -1,0 +1,34 @@
+{
+  "Mobile-textPairing": {
+    "space-between": {
+      "md": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "{semantic.space-between.xxs}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{semantic.space-between.xxxl}",
+        "type": "spacing"
+      }
+    }
+  },
+  "modal-radius": {
+    "value": "{semantic.radius.lg}",
+    "type": "borderRadius"
+  },
+  "subtext-on-dark": {
+    "value": "{semantic.typography.h1}",
+    "type": "typography"
+  },
+  "text-onDark": {
+    "value": "{theme.semantic.color.fg.on-accent}",
+    "type": "color"
+  },
+  "title-onDark": {
+    "value": "{semantic.typography.label.lg}",
+    "type": "typography"
+  }
+}

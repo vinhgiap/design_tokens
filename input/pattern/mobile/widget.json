@@ -1,0 +1,82 @@
+{
+  "widget": {
+    "space-between": {
+      "md": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{semantic.space-between.xxxl}",
+        "type": "spacing"
+      }
+    },
+    "padding": {
+      "horizontal": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "vertical": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      }
+    },
+    "stepper": {
+      "padding": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      }
+    }
+  },
+  "widget-stepper": {
+    "link-container": {
+      "width": {
+        "value": "{semantic.size.height.xs}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{semantic.size.height.xxs}",
+        "type": "sizing"
+      }
+    },
+    "background": {
+      "focus": {
+        "value": "{theme.semantic.color.bg.highlight-light}",
+        "type": "color"
+      },
+      "processing": {
+        "value": "{theme.semantic.color.bg-status.warning}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.5",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "alert": {
+        "value": "{theme.semantic.color.bg-status.alert}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.5",
+              "space": "hsl"
+            }
+          }
+        }
+      }
+    }
+  },
+  "widget-radius": {
+    "value": "{semantic.radius.md}",
+    "type": "borderRadius"
+  },
+  "widget-shadow": {
+    "value": "{semantic.shadow.level-5}",
+    "type": "boxShadow"
+  }
+}

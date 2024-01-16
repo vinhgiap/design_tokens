@@ -1,0 +1,54 @@
+{
+  "bottomSheet-radius": {
+    "value": "{semantic.radius.xl}",
+    "type": "borderRadius"
+  },
+  "bottomSheet-shadow": {
+    "value": "{semantic.shadow.level-2}",
+    "type": "boxShadow"
+  },
+  "bottomSheet-bar": {
+    "width": {
+      "value": "{semantic.size.height.md}",
+      "type": "sizing"
+    },
+    "height": {
+      "value": "{semantic.size.height.ultra-xxxs}",
+      "type": "sizing"
+    }
+  },
+  "bottomSheet-bar-color": {
+    "value": "{theme.semantic.color.border.default}",
+    "type": "color"
+  },
+  "bottomSheet-bar-radius": {
+    "value": "{semantic.radius.lg}",
+    "type": "borderRadius"
+  },
+  "bottomSheet-bar-padding": {
+    "value": "{semantic.padding.md}",
+    "type": "spacing"
+  },
+  "bottomSheet": {
+    "background": {
+      "value": "{theme.semantic.color.canvas.surface}",
+      "type": "color"
+    }
+  },
+  "bottomSheet-body": {
+    "padding": {
+      "value": "{semantic.padding.md}",
+      "type": "spacing"
+    }
+  },
+  "bottomSheet-actionHeader": {
+    "padding": {
+      "value": "{semantic.padding.md}",
+      "type": "spacing"
+    },
+    "space-between": {
+      "value": "{semantic.space-between.xxxl}",
+      "type": "spacing"
+    }
+  }
+}

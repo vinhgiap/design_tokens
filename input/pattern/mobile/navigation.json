@@ -1,0 +1,45 @@
+{
+  "navigation-item": {
+    "space-between": {
+      "value": "{semantic.space-between.md}",
+      "type": "spacing"
+    }
+  },
+  "nav-item": {
+    "icon-size": {
+      "value": "{semantic.size.icon.md}",
+      "type": "sizing"
+    },
+    "icon-color": {
+      "default": {
+        "value": "{theme.semantic.color.fg.tertiary}",
+        "type": "color"
+      },
+      "selected": {
+        "value": "{theme.semantic.color.brand.special-45degree}",
+        "type": "gradient"
+      }
+    },
+    "selected-text": {
+      "value": {
+        "typography": "{semantic.typography.h5}",
+        "fill": "{theme.semantic.color.brand.default}"
+      },
+      "type": "composition"
+    }
+  },
+  "navigation": {
+    "padding": {
+      "value": "{semantic.padding.md}",
+      "type": "spacing"
+    }
+  },
+  "navigation-background": {
+    "value": "{theme.semantic.color.canvas.surface}",
+    "type": "color"
+  },
+  "navigation-shadow": {
+    "value": "{semantic.shadow.level-2}",
+    "type": "boxShadow"
+  }
+}

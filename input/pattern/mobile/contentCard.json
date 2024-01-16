@@ -1,0 +1,103 @@
+{
+  "contentCard": {
+    "padding": {
+      "md": {
+        "value": "{semantic.padding.md}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{semantic.padding.lg}",
+        "type": "spacing"
+      },
+      "space-between": {
+        "lg": {
+          "value": "{semantic.space-between.xl}",
+          "type": "spacing"
+        },
+        "sm": {
+          "value": "{semantic.space-between.md}",
+          "type": "spacing"
+        },
+        "xs": {
+          "value": "{semantic.space-between.xs}",
+          "type": "spacing"
+        },
+        "zero": {
+          "value": "{semantic.space-between.zero}",
+          "type": "spacing"
+        },
+        "xl": {
+          "value": "{semantic.space-between.xxxl}",
+          "type": "spacing"
+        }
+      },
+      "text-padding": {
+        "xs": {
+          "value": "{semantic.padding.xxs}",
+          "type": "spacing"
+        },
+        "sm": {
+          "value": "{semantic.padding.xs}",
+          "type": "spacing"
+        },
+        "md": {
+          "value": "{semantic.padding.sm}",
+          "type": "spacing"
+        }
+      }
+    },
+    "shadow": {
+      "1": {
+        "value": "{semantic.shadow.level-4}",
+        "type": "boxShadow"
+      },
+      "2": {
+        "value": "{semantic.shadow.level-3}",
+        "type": "boxShadow"
+      }
+    },
+    "icon-size": {
+      "md": {
+        "value": "{semantic.size.icon.sm}",
+        "type": "sizing"
+      }
+    }
+  },
+  "contentCard-background": {
+    "background": {
+      "value": "{theme.semantic.color.canvas.surface}",
+      "type": "color"
+    },
+    "background-special": {
+      "value": "{theme.semantic.color.bg.highlight-light}",
+      "type": "color"
+    },
+    "gery": {
+      "value": "{theme.semantic.color.canvas.canvas}",
+      "type": "color"
+    },
+    "transparent": {
+      "value": "{theme.semantic.color.bg-status.highlight}",
+      "type": "color",
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "alpha",
+            "value": "0.2",
+            "space": "hsl"
+          }
+        }
+      }
+    }
+  },
+  "contentCard-radius": {
+    "value": "{semantic.radius.md}",
+    "type": "borderRadius"
+  },
+  "contentCard-content": {
+    "special": {
+      "value": "{theme.semantic.color.brand.default}",
+      "type": "color"
+    }
+  }
+}

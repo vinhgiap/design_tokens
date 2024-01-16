@@ -1,0 +1,30 @@
+{
+  "stepper": {
+    "divider-container": {
+      "lg": {
+        "value": "{semantic.size.height.xs}",
+        "type": "sizing"
+      },
+      "sm": {
+        "height": {
+          "value": "{semantic.size.height.xxxs}",
+          "type": "sizing"
+        },
+        "width": {
+          "value": "{semantic.size.icon.md}",
+          "type": "sizing"
+        }
+      }
+    },
+    "space-between": {
+      "md": {
+        "value": "{semantic.space-between.md}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{semantic.space-between.xxxxl}",
+        "type": "spacing"
+      }
+    }
+  }
+}
