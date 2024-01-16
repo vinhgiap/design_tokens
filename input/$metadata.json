@@ -1,7 +1,9 @@
 {
   "tokenSetOrder": [
-    "global",
-    "alias",
-    "component"
+    "core/global",
+    "default theme/light",
+    "default theme/dark",
+    "premium theme/light",
+    "premium theme/dark"
   ]
 }
